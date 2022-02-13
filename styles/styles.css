@@ -1,0 +1,21 @@
+@media only screen and (max-width: 600px) {
+  .main-nav {
+    background: #03051c;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main-nav .nav-items {
+    margin: 0px 10px;
+    padding: 8px 4px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
