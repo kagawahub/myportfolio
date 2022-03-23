@@ -1,21 +1,93 @@
-@media only screen and (max-width: 600px) {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 320px) {
   .main-nav {
-    background: #03051c;
+    background: #020d16;
     color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .main-nav .nav-items {
-    margin: 0px 10px;
-    padding: 8px 4px;
+    padding: 1.2rem 0.5rem;
+    justify-content: space-between;
+    align-items: center;
   }
 }
+body {
+  background: #141d26;
+}
+
+@media (max-width: 320px) {
+  header {
+    height: 10vh;
+    background: #01283b;
+    background: white;
+  }
+  header .welcome-text h1,
+header .welcome-text p {
+    color: #020d16;
+    text-align: center;
+  }
+  header .welcome-text h1 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  header .welcome-text p {
+    color: rgba(2, 13, 22, 0.8);
+    font-size: 18px;
+    font-weight: 600;
+  }
+  header .home {
+    height: auto;
+    width: auto;
+    overflow-x: hidden;
+  }
+  header .home .img1 {
+    background: rgba(255, 255, 255, 0.7);
+    height: 16rem;
+    width: 16rem;
+    margin: 2rem;
+    border-radius: 10rem;
+    margin: 2.5rem 0 0 2rem;
+    border: 5px solid #020d16;
+  }
+  header .home .img1 img {
+    height: 19rem;
+    width: 19rem;
+    margin: 1.5rem 0 0 1.8rem;
+    border-bottom-left-radius: 8rem;
+  }
+  header .home .home-text {
+    color: white;
+    text-align: center;
+    margin: 6rem 0rem 1rem 1rem;
+    padding: 1rem;
+    height: auto;
+    width: 18rem;
+    line-height: 30px;
+    box-shadow: 1px 1px 15px black;
+    border-radius: 10px;
+    font-weight: 550;
+    font-size: 22px;
+  }
+  header .home .home-text button {
+    margin-top: 1rem;
+    margin-left: 11rem;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.7);
+    color: #01283b;
+    padding: 6px;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 18px;
+    box-shadow: 5px 5px 15px black;
+    cursor: pointer;
+  }
+  header .home .home-text button :hover {
+    background: red;
+    color: green;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
