@@ -4,24 +4,25 @@ body {
 }
 
 header {
-  height: 10vh;
+  // height: 10vh;
   background: white;
-}
+  padding: 0.5rem 0;
 
-.welcome-text {
-  h1,
-  p {
-    color: rgb(2, 13, 22);
-    text-align: center;
-  }
-  h1 {
-    font-size: 25px;
-    font-weight: 700;
-  }
-  p {
-    color: rgba(2, 13, 22, 0.8);
-    font-size: 18px;
-    font-weight: 600;
+  .welcome-text {
+    h1,
+    p {
+      color: rgb(2, 13, 22);
+      text-align: center;
+    }
+    h1 {
+      font-size: 25px;
+      font-weight: 700;
+    }
+    p {
+      color: rgba(2, 13, 22, 0.8);
+      font-size: 18px;
+      font-weight: 600;
+    }
   }
 }
 
@@ -149,5 +150,74 @@ footer {
   p {
     margin-left: 11.8rem;
     font-size: 0.75rem;
+  }
+}
+
+// Ajusted screen (max-width: 320px)
+@media (min-width: 375px) {
+  header {
+    .welcome-text {
+      h1 {
+        font-size: 27px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .home {
+    .img1 {
+      height: 17rem;
+      width: 17rem;
+      border-radius: 12rem;
+      margin: 2.5rem 0 0 3.1rem;
+      img {
+        height: 20rem;
+        width: 20rem;
+        margin: 1.7rem 0 0 2rem;
+      }
+    }
+
+    .home-text {
+      margin: 6rem 0rem 1rem 2.2rem;
+      width: 19rem;
+      font-size: 24px;
+      button {
+        margin-left: 9.3rem;
+        font-size: 19px;
+      }
+    }
+  }
+
+  footer {
+    background: rgb(2, 13, 22);
+    height: auto;
+    padding: 0.9rem 1.5rem;
+    color: white;
+    hr {
+      // width: 2px;
+      margin: 0.7rem 0px;
+      color: rgb(203, 235, 213);
+    }
+    .footer-icons {
+      font-size: 18.5px;
+      i {
+        font-size: 18px;
+      }
+    }
+    .footer-email {
+      margin-left: 1.4rem;
+      h4 {
+        font-size: 18px;
+      }
+    }
+    .site-map {
+      margin-left: 1.4rem;
+    }
+    p {
+      margin-left: 15rem;
+      font-size: 0.82rem;
+    }
   }
 }

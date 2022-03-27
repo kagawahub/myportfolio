@@ -23,20 +23,19 @@ body {
 }
 
 header {
-  height: 10vh;
   background: white;
+  padding: 0.5rem 0;
 }
-
-.welcome-text h1,
-.welcome-text p {
+header .welcome-text h1,
+header .welcome-text p {
   color: #020d16;
   text-align: center;
 }
-.welcome-text h1 {
+header .welcome-text h1 {
   font-size: 25px;
   font-weight: 700;
 }
-.welcome-text p {
+header .welcome-text p {
   color: rgba(2, 13, 22, 0.8);
   font-size: 18px;
   font-weight: 600;
@@ -144,6 +143,66 @@ footer .site-map a {
 footer p {
   margin-left: 11.8rem;
   font-size: 0.75rem;
+}
+
+@media (min-width: 375px) {
+  header .welcome-text h1 {
+    font-size: 27px;
+  }
+  header .welcome-text p {
+    font-size: 20px;
+  }
+
+  .home .img1 {
+    height: 17rem;
+    width: 17rem;
+    border-radius: 12rem;
+    margin: 2.5rem 0 0 3.1rem;
+  }
+  .home .img1 img {
+    height: 20rem;
+    width: 20rem;
+    margin: 1.7rem 0 0 2rem;
+  }
+  .home .home-text {
+    margin: 6rem 0rem 1rem 2.2rem;
+    width: 19rem;
+    font-size: 24px;
+  }
+  .home .home-text button {
+    margin-left: 9.3rem;
+    font-size: 19px;
+  }
+
+  footer {
+    background: #020d16;
+    height: auto;
+    padding: 0.9rem 1.5rem;
+    color: white;
+  }
+  footer hr {
+    margin: 0.7rem 0px;
+    color: #cbebd5;
+  }
+  footer .footer-icons {
+    font-size: 18.5px;
+  }
+  footer .footer-icons i {
+    font-size: 18px;
+  }
+  footer .footer-email {
+    margin-left: 1.4rem;
+  }
+  footer .footer-email h4 {
+    font-size: 18px;
+  }
+  footer .site-map {
+    margin-left: 1.4rem;
+  }
+  footer p {
+    margin-left: 15rem;
+    font-size: 0.82rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
