@@ -3,15 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
-@media (max-width: 320px) {
-  .main-nav {
-    // background: #03051c;
-    background: rgb(2, 13, 22);
+.main-nav {
+  // background: #03051c;
+  background: rgb(2, 13, 22);
+  color: white;
+  display: flex;
+  padding: 1.2rem 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  a {
     color: white;
-    display: flex;
-    padding: 1.2rem 0.5rem;
-    justify-content: space-between;
-    align-items: center;
-    // width: 100%;
-  }
+      text-decoration: none;
+    }
+
+
+  // .Hamburger{
+
+  // }
 }

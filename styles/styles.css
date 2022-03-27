@@ -4,90 +4,146 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 320px) {
-  .main-nav {
-    background: #020d16;
-    color: white;
-    display: flex;
-    padding: 1.2rem 0.5rem;
-    justify-content: space-between;
-    align-items: center;
-  }
+.main-nav {
+  background: #020d16;
+  color: white;
+  display: flex;
+  padding: 1.2rem 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
+.main-nav a {
+  color: white;
+  text-decoration: none;
+}
+
 body {
   background: #141d26;
 }
 
-@media (max-width: 320px) {
-  header {
-    height: 10vh;
-    background: #01283b;
-    background: white;
-  }
-  header .welcome-text h1,
-header .welcome-text p {
-    color: #020d16;
-    text-align: center;
-  }
-  header .welcome-text h1 {
-    font-size: 25px;
-    font-weight: 700;
-  }
-  header .welcome-text p {
-    color: rgba(2, 13, 22, 0.8);
-    font-size: 18px;
-    font-weight: 600;
-  }
-  header .home {
-    height: auto;
-    width: auto;
-    overflow-x: hidden;
-  }
-  header .home .img1 {
-    background: rgba(255, 255, 255, 0.7);
-    height: 16rem;
-    width: 16rem;
-    margin: 2rem;
-    border-radius: 10rem;
-    margin: 2.5rem 0 0 2rem;
-    border: 5px solid #020d16;
-  }
-  header .home .img1 img {
-    height: 19rem;
-    width: 19rem;
-    margin: 1.5rem 0 0 1.8rem;
-    border-bottom-left-radius: 8rem;
-  }
-  header .home .home-text {
-    color: white;
-    text-align: center;
-    margin: 6rem 0rem 1rem 1rem;
-    padding: 1rem;
-    height: auto;
-    width: 18rem;
-    line-height: 30px;
-    box-shadow: 1px 1px 15px black;
-    border-radius: 10px;
-    font-weight: 550;
-    font-size: 22px;
-  }
-  header .home .home-text button {
-    margin-top: 1rem;
-    margin-left: 11rem;
-    box-sizing: border-box;
-    background: rgba(255, 255, 255, 0.7);
-    color: #01283b;
-    padding: 6px;
-    border-radius: 7px;
-    font-weight: 500;
-    font-size: 18px;
-    box-shadow: 5px 5px 15px black;
-    cursor: pointer;
-  }
-  header .home .home-text button :hover {
-    background: red;
-    color: green;
-  }
+header {
+  height: 10vh;
+  background: white;
+}
+
+.welcome-text h1,
+.welcome-text p {
+  color: #020d16;
+  text-align: center;
+}
+.welcome-text h1 {
+  font-size: 25px;
+  font-weight: 700;
+}
+.welcome-text p {
+  color: rgba(2, 13, 22, 0.8);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.home {
+  height: auto;
+  width: auto;
+  overflow-x: hidden;
+}
+.home .img1 {
+  background: rgba(255, 255, 255, 0.7);
+  height: 16rem;
+  width: 16rem;
+  margin: 2rem;
+  border-radius: 10rem;
+  margin: 2.5rem 0 0 2rem;
+  border: 5px solid #020d16;
+}
+.home .img1 img {
+  height: 19rem;
+  width: 19rem;
+  margin: 1.5rem 0 0 1.8rem;
+  border-bottom-left-radius: 8rem;
+}
+.home .home-text {
+  color: white;
+  text-align: center;
+  margin: 6rem 0rem 1rem 1rem;
+  padding: 1rem;
+  height: auto;
+  width: 18rem;
+  line-height: 30px;
+  box-shadow: 1px 1px 15px black;
+  border-radius: 10px;
+  font-weight: 550;
+  font-size: 22px;
+}
+.home .home-text button {
+  margin-top: 1rem;
+  margin-left: 11rem;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.7);
+  color: #020d16;
+  padding: 6px;
+  border-radius: 7px;
+  font-weight: 500;
+  font-size: 18px;
+  box-shadow: 5px 5px 15px black;
+  cursor: pointer;
+}
+.home .home-text button a {
+  text-decoration: none;
+  color: #020d16;
+}
+.home .home-text button :hover {
+  background: yellow;
+  color: green;
+}
+
+footer {
+  background: #020d16;
+  height: auto;
+  padding: 0.9rem 1.5rem;
+  color: white;
+}
+footer hr {
+  margin: 0.7rem 0px;
+  color: #cbebd5;
+}
+footer .footer-icons {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+footer .footer-icons i {
+  font-size: 15px;
+  margin-top: 3px;
+}
+footer .footer-email {
+  display: flex;
+  margin-left: 1.1rem;
+}
+footer .footer-email a {
+  margin-left: 0.6rem;
+  color: white;
+}
+footer .site-map {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.1rem;
+  margin-top: 5px;
+}
+footer .site-map h4 {
+  color: #678771;
+}
+footer .site-map a {
+  color: #cbebd5;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 0.5rem;
+}
+footer p {
+  margin-left: 11.8rem;
+  font-size: 0.75rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
