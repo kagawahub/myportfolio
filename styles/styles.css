@@ -13,15 +13,42 @@
   align-items: center;
   width: 100%;
 }
+.main-nav h1 {
+  animation-name: portfolio_color;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
 .main-nav a {
   color: white;
   text-decoration: none;
 }
 
+@keyframes portfolio_color {
+  0% {
+    color: white;
+  }
+  20% {
+    color: green;
+  }
+  40% {
+    color: white;
+  }
+  50% {
+    color: red;
+  }
+  70% {
+    color: white;
+  }
+  80% {
+    color: yellow;
+  }
+  100% {
+    color: white;
+  }
+}
 body {
   background: #141d26;
 }
-
 header {
   background: white;
   padding: 0.5rem 0;
@@ -42,17 +69,20 @@ header .welcome-text p {
 }
 
 .home {
-  height: auto;
-  width: auto;
-  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5.5rem;
+  margin-inline: auto;
 }
 .home .img1 {
   background: rgba(255, 255, 255, 0.7);
   height: 16rem;
   width: 16rem;
-  margin: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
   border-radius: 10rem;
-  margin: 2.5rem 0 0 2rem;
   border: 5px solid #020d16;
 }
 .home .img1 img {
@@ -64,7 +94,7 @@ header .welcome-text p {
 .home .home-text {
   color: white;
   text-align: center;
-  margin: 6rem 0rem 1rem 1rem;
+  margin: 0rem 0rem 1rem 0rem;
   padding: 1rem;
   height: auto;
   width: 18rem;
@@ -141,68 +171,8 @@ footer .site-map a {
   margin-top: 0.5rem;
 }
 footer p {
-  margin-left: 11.8rem;
+  float: right;
   font-size: 0.75rem;
-}
-
-@media (min-width: 375px) {
-  header .welcome-text h1 {
-    font-size: 27px;
-  }
-  header .welcome-text p {
-    font-size: 20px;
-  }
-
-  .home .img1 {
-    height: 17rem;
-    width: 17rem;
-    border-radius: 12rem;
-    margin: 2.5rem 0 0 3.1rem;
-  }
-  .home .img1 img {
-    height: 20rem;
-    width: 20rem;
-    margin: 1.7rem 0 0 2rem;
-  }
-  .home .home-text {
-    margin: 6rem 0rem 1rem 2.2rem;
-    width: 19rem;
-    font-size: 24px;
-  }
-  .home .home-text button {
-    margin-left: 9.3rem;
-    font-size: 19px;
-  }
-
-  footer {
-    background: #020d16;
-    height: auto;
-    padding: 0.9rem 1.5rem;
-    color: white;
-  }
-  footer hr {
-    margin: 0.7rem 0px;
-    color: #cbebd5;
-  }
-  footer .footer-icons {
-    font-size: 18.5px;
-  }
-  footer .footer-icons i {
-    font-size: 18px;
-  }
-  footer .footer-email {
-    margin-left: 1.4rem;
-  }
-  footer .footer-email h4 {
-    font-size: 18px;
-  }
-  footer .site-map {
-    margin-left: 1.4rem;
-  }
-  footer p {
-    margin-left: 15rem;
-    font-size: 0.82rem;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

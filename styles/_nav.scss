@@ -13,6 +13,12 @@
   align-items: center;
   width: 100%;
 
+  h1{
+    animation-name: portfolio_color;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+
   a {
     color: white;
       text-decoration: none;
@@ -22,4 +28,14 @@
   // .Hamburger{
 
   // }
+}
+
+@keyframes portfolio_color {
+  0%{color: white;}
+  20%{color: green;}
+  40%{color: white;}
+  50%{color: red;}
+  70%{color: white;}
+  80%{color: yellow;}
+  100%{color: white;}
 }

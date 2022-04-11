@@ -1,6 +1,9 @@
 // Initial screen (max-width: 320px)
 body {
   background: rgb(20, 29, 38);
+  * {
+    // outline: 1px solid red;
+  }
 }
 
 header {
@@ -27,37 +30,40 @@ header {
 }
 
 .home {
-  // display: flex;
-  // justify-content: space-around;
-  height: auto;
-  width: auto;
-  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5.5rem;
+  // height: auto;
+  // width: auto;
+  // overflow-x: hidden;
+  margin-inline: auto;
 
   .img1 {
     // padding: 2rem;
     background: rgba(255, 255, 255, 0.7);
     height: 16rem;
     width: 16rem;
-    margin: 2rem;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
     border-radius: 10rem;
-    margin: 2.5rem 0 0 2rem;
     border: 5px solid rgb(2, 13, 22);
+    // overflow-x: hidden;
+
 
     img {
       height: 19rem;
       width: 19rem;
       margin: 1.5rem 0 0 1.8rem;
       border-bottom-left-radius: 8rem;
-      // padding: 1rem;
-      // border-bottom: 2px solid rgb(2, 13, 22);
     }
   }
 
   .home-text {
-    // background: green;
     color: white;
     text-align: center;
-    margin: 6rem 0rem 1rem 1rem;
+    margin: 0rem 0rem 01rem 0rem;
     padding: 1rem;
     height: auto;
     width: 18rem;
@@ -148,76 +154,8 @@ footer {
   }
 
   p {
-    margin-left: 11.8rem;
+    float: right;
     font-size: 0.75rem;
   }
 }
 
-// Ajusted screen (max-width: 320px)
-@media (min-width: 375px) {
-  header {
-    .welcome-text {
-      h1 {
-        font-size: 27px;
-      }
-      p {
-        font-size: 20px;
-      }
-    }
-  }
-
-  .home {
-    .img1 {
-      height: 17rem;
-      width: 17rem;
-      border-radius: 12rem;
-      margin: 2.5rem 0 0 3.1rem;
-      img {
-        height: 20rem;
-        width: 20rem;
-        margin: 1.7rem 0 0 2rem;
-      }
-    }
-
-    .home-text {
-      margin: 6rem 0rem 1rem 2.2rem;
-      width: 19rem;
-      font-size: 24px;
-      button {
-        margin-left: 9.3rem;
-        font-size: 19px;
-      }
-    }
-  }
-
-  footer {
-    background: rgb(2, 13, 22);
-    height: auto;
-    padding: 0.9rem 1.5rem;
-    color: white;
-    hr {
-      // width: 2px;
-      margin: 0.7rem 0px;
-      color: rgb(203, 235, 213);
-    }
-    .footer-icons {
-      font-size: 18.5px;
-      i {
-        font-size: 18px;
-      }
-    }
-    .footer-email {
-      margin-left: 1.4rem;
-      h4 {
-        font-size: 18px;
-      }
-    }
-    .site-map {
-      margin-left: 1.4rem;
-    }
-    p {
-      margin-left: 15rem;
-      font-size: 0.82rem;
-    }
-  }
-}
