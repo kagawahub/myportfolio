@@ -175,4 +175,47 @@ footer p {
   font-size: 0.75rem;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.imgboss {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+.imgboss img {
+  margin: 0;
+  padding: 0;
+  height: 32vh;
+  width: 56vh;
+}
+
+.about_page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.2rem 1.5rem;
+}
+.about_page .section h1 {
+  color: #45b0ca;
+  margin-bottom: 0.2rem;
+}
+.about_page .section .span1 {
+  color: #83e0a2;
+  font-weight: 900;
+}
+.about_page .section p {
+  color: white;
+  font-size: 17px;
+  margin-bottom: 1.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
 /*# sourceMappingURL=styles.css.map */
