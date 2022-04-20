@@ -77,18 +77,19 @@ header .welcome-text p {
   margin-inline: auto;
 }
 .home .img1 {
+  padding: -30rem;
   background: rgba(255, 255, 255, 0.7);
   height: 16rem;
   width: 16rem;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   border-radius: 10rem;
-  border: 5px solid #020d16;
+  border: 7px solid #020d16;
 }
 .home .img1 img {
-  height: 19rem;
-  width: 19rem;
-  margin: 1.5rem 0 0 1.8rem;
+  height: 18rem;
+  width: 11.1rem;
+  margin: 2.4rem 0 0 1.9rem;
   border-bottom-left-radius: 8rem;
 }
 .home .home-text {
@@ -187,13 +188,13 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
 }
 .imgboss img {
   margin: 0;
   padding: 0;
   height: 32vh;
   width: 56vh;
+  overflow-x: hidden;
 }
 
 .about_page {

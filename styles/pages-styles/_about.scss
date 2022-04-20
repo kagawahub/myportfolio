@@ -9,13 +9,13 @@ box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
     
     img{
         margin: 0;
         padding: 0;
         height: 32vh;
         width: 56vh;
+        overflow-x: hidden;
     }
    
 
