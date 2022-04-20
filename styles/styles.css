@@ -73,8 +73,7 @@ header .welcome-text p {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  gap: 5.5rem;
-  margin-inline: auto;
+  gap: 5.9rem;
 }
 .home .img1 {
   padding: -30rem;
@@ -95,7 +94,7 @@ header .welcome-text p {
 .home .home-text {
   color: white;
   text-align: center;
-  margin: 0rem 0rem 1rem 0rem;
+  margin: 0rem 0rem 1.4rem 0rem;
   padding: 1rem;
   height: auto;
   width: 18rem;
@@ -121,10 +120,6 @@ header .welcome-text p {
 .home .home-text button a {
   text-decoration: none;
   color: #020d16;
-}
-.home .home-text button :hover {
-  background: yellow;
-  color: green;
 }
 
 footer {

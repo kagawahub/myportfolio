@@ -37,11 +37,11 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  gap: 5.5rem;
+  gap: 5.9rem;
   // height: auto;
   // width: auto;
   // overflow-x: hidden;
-  margin-inline: auto;
+  // margin-inline: auto;
 
   .img1 {
     padding: -30rem;
@@ -66,7 +66,7 @@ header {
   .home-text {
     color: white;
     text-align: center;
-    margin: 0rem 0rem 01rem 0rem;
+    margin: 0rem 0rem 1.4rem 0rem;
     padding: 1rem;
     height: auto;
     width: 18rem;
@@ -93,11 +93,6 @@ header {
       a {
         text-decoration: none;
         color: rgb(2, 13, 22);
-      }
-
-      :hover {
-        background: yellow;
-        color: green;
       }
     }
   }
