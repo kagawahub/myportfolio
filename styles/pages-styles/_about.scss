@@ -11,15 +11,12 @@ box-sizing: border-box;
     align-items: center;
     
     img{
-        margin: 0;
-        padding: 0;
-        height: 32vh;
-        width: auto;
+        // height: 30vh;
+        height: auto;
         overflow-x: hidden;
-    }
-   
-
-    
+        max-width: 100%;
+        width: 100%;
+    } 
 }
 .about_page{
     display: flex;

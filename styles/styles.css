@@ -186,11 +186,10 @@ footer p {
   align-items: center;
 }
 .imgboss img {
-  margin: 0;
-  padding: 0;
-  height: 32vh;
-  width: auto;
+  height: auto;
   overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
 }
 
 .about_page {
